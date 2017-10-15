@@ -14,21 +14,21 @@ public class ReverseLines {
     final Scanner input = new Scanner(System.in);
 		String line = null;
 		while ((line = input.nextLine()) != null) {
-			line = input.next();
+
 			System.out.println(line);
 			for(int i = 0; i <line.length(); i++) {
 				stack.push(line.charAt(i));
 			}
 
 
-
+			String tempWord= "";
+			for(int i = 0; i <line.length(); i++) {
+				tempWord += stack.pop();}
+			System.out.println(tempWord);
 
 
 		}
-		String tempWord= "";
-		for(int i = 0; i <line.length(); i++) {
-			tempWord += stack.pop();}
-		System.out.println(tempWord);
+
 
 
 	}
