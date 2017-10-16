@@ -2,7 +2,7 @@ Why does `LinkedStack` not require an explicit constructor?
 We don't need a explicit constructor because push essentially creates each node as items are added, additionally it is connecting them for us.
 
 What is the time and (extra) space complexity of each of the `LinkedStack` methods, as well as `ReverseLines.main`?
-
+push:O(1)space O(1), peek:O(1) space O(1), pop:O(1) space O(1), isEmpty:O(1) space O(1), asList:O(N) space O(N), ReverseLines:O(N) space O(N)
 
 How else (not using `Node`) could we have implemented `LinkedStack` in such a way that it is still based on a linked list but the `asList` method uses constant time and space?
 By using an array list we can create a LinkedStack without using node because the values are stored starting at 0 and we push the last value added going down towards zero.
