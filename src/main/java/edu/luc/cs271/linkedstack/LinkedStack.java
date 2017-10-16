@@ -24,8 +24,12 @@ public class LinkedStack<E> implements IStack<E> {
 
   @Override
   public E peek() {
-
-    return top.data;
+    if (top != null) {
+      return top.data;
+    }
+    else {
+      throw new NoSuchElementException();
+    }
   }
 
   @Override
